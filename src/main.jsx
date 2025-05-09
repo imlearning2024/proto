@@ -17,9 +17,9 @@ import NGOLogin from './components/NGOLogin'
 import Home from './components/Home'
 import NGORegister from "./components/NGORegister"
 import About from "./components/About"
-import IssueReport from "./components/IssueReport";
-
-
+import IssueReport from "./components/IssueReport"
+import UserDashboard from "./components/UserDashboard"
+import NGODashboard from "./components/NGODashboard"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +31,8 @@ const router = createBrowserRouter(
             <Route path="ngoRegister" element={<NGORegister />} />
             <Route path="about" element={<About />} />
             <Route path="report" element={<IssueReport />} />
+            <Route path="UserDashboard" element={<UserDashboard />} />
+            <Route path="ngo/dashboard" element={<NGODashboard />} />
 
         </Route>
   )

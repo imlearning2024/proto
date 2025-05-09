@@ -20,6 +20,7 @@ const Navbar = () => {
         {/* Nav Links */}
                 <div className="space-x-4 hidden md:flex">
                     <NavLink to="/" className={linkClass}>Home</NavLink>
+                    <NavLink to="/UserDashboard" className={linkClass}>Dashboard</NavLink>
                     <NavLink to="/login" className={linkClass}>User Login</NavLink>
                     <NavLink to="/NGOLogin" className={linkClass}>NGO Login</NavLink>
                     <Link to="/report" className="hover:text-green-200">Report Issue</Link>
