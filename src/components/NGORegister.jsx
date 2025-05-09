@@ -20,7 +20,7 @@ const NGOSignup = () => {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    // TODO: Add signup logic here
+        //signup logic by sonam
     console.log("Registering NGO:", formData);
   };
 

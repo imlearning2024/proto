@@ -20,6 +20,7 @@ import About from "./components/About"
 import IssueReport from "./components/IssueReport"
 import UserDashboard from "./components/UserDashboard"
 import NGODashboard from "./components/NGODashboard"
+import UserReports from "./pages/UserReports"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
             <Route path="report" element={<IssueReport />} />
             <Route path="UserDashboard" element={<UserDashboard />} />
             <Route path="ngo/dashboard" element={<NGODashboard />} />
+            <Route path="user/reports" element={<UserReports/>} />
 
         </Route>
   )
