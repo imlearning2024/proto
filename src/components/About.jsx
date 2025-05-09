@@ -1,4 +1,3 @@
-
 import { Link } from "lucide-react";
 import React from "react";
 
@@ -61,20 +60,6 @@ const About = () => {
                     Sign Up Today
                   </a>
                 </section>
-                {/* Join Us */}
-                {/* <section className="text-center"> */}
-                {/*     <h2 className="text-2xl font-semibold text-green-600 mb-4">Join the Movement</h2> */}
-                {/*     <p className="text-gray-700 mb-6"> */}
-                {/*         Whether you’re a concerned citizen, a volunteer, or an NGO representative, */}
-                {/*         EnvReporter welcomes your voice. Together, we can make a real difference. */}
-                {/*     </p> */}
-                {/*     <Link */}
-                {/*         to="/register" */}
-                {/*         className="inline-block bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition" */}
-                {/*     > */}
-                {/*         Sign Up Today */}
-                {/*     </Link> */}
-                {/* </section> */}
             </div>
         </div>
     );
