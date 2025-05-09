@@ -1,6 +1,7 @@
 
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
+
 
 const Navbar = () => {
   const linkClass = ({ isActive }) =>
@@ -17,12 +18,13 @@ const Navbar = () => {
         </NavLink>
 
         {/* Nav Links */}
-        <div className="space-x-4 hidden md:flex">
-          <NavLink to="/" className={linkClass}>Home</NavLink>
-          <NavLink to="/about" className={linkClass}>About</NavLink>
-          <NavLink to="/login" className={linkClass}>User Login</NavLink>
-          <NavLink to="/NGOLogin" className={linkClass}>NGO Login</NavLink>
-        </div>
+                <div className="space-x-4 hidden md:flex">
+                    <NavLink to="/" className={linkClass}>Home</NavLink>
+                    <NavLink to="/login" className={linkClass}>User Login</NavLink>
+                    <NavLink to="/NGOLogin" className={linkClass}>NGO Login</NavLink>
+                    <Link to="/report" className="hover:text-green-200">Report Issue</Link>
+                    <NavLink to="/about" className={linkClass}>About</NavLink>
+                </div>
 
         {/* Mobile Menu Placeholder */}
         <div className="md:hidden">

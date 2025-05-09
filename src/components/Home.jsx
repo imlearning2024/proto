@@ -1,6 +1,6 @@
 import React from "react";
 import { Leaf, CloudRain, TreePine, Droplets, AlertTriangle } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 
 const Home = () => {
     const navigate = useNavigate()
@@ -21,9 +21,11 @@ const Home = () => {
             Join our global community to protect and preserve our planet. 
             Report issues, raise awareness, and drive meaningful action.
           </p>
+            <Link to="/report">
           <button className="mt-8 bg-white text-green-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-50 transition-all shadow-lg">
             Get Started
           </button>
+                    </Link>
         </div>
       </section>
 
@@ -185,21 +187,23 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Before Footer */}
-      <section className="py-12 bg-green-600 text-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Ready to Make a Difference?</h2>
-        <p className="max-w-2xl mx-auto mb-8 text-green-50">
-          Join thousands of environmental advocates working together to preserve our planet.
-        </p>
-        <div className="flex gap-4 justify-center flex-wrap">
-          <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-all shadow-md">
-            Sign Up Now
-          </button>
-          <button className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all">
-            Learn More
-          </button>
-        </div>
-      </section>
+
+            <section className="py-12 bg-green-600 text-white text-center">
+                <h2 className="text-3xl font-bold mb-4">Ready to Make a Difference?</h2>
+                <p className="max-w-2xl mx-auto mb-8 text-green-50">
+                    Join thousands of environmental advocates working together to preserve our planet.
+                </p>
+                <div className="flex gap-4 justify-center flex-wrap">
+                    <Link to="/UserRegister">
+                        <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-all shadow-md">
+                            Sign Up Now
+                        </button>
+                    </Link>
+                    <button className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all">
+                        Learn More
+                    </button>
+                </div>
+            </section>
 
       {/* Footer - Enhanced */}
       <footer className="py-10 bg-green-800 text-green-50">

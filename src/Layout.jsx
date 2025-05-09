@@ -11,7 +11,7 @@ function Layout(){
             <Navbar />
             </div>
             <Outlet />
-            <Home />
+            {/* <Home /> */}
 
 
     </>
